@@ -1,0 +1,175 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: 'Satisfy', cursive; /* Use Satisfy as the main font */
+  background: url('https://wallpapers-clan.com/wp-content/uploads/2023/12/clouds-gradient-minimalist-desktop-wallpaper-preview.jpg') no-repeat center center fixed; /* Add wallpaper */
+  background-size: cover; /* Ensure the image covers the entire screen */
+  color: #ff6b81; /* Pastel red text */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3.5rem; /* Larger size for emphasis */
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.subtitle {
+  font-size: 1.8rem; /* Slightly larger subtitle */
+  color: #ff4757;
+}
+
+/* Bouncing Heart */
+.bouncing-heart {
+  font-size: 4rem; /* Large heart emoji */
+  animation: bounce 1.5s infinite ease-in-out; /* Apply bounce animation */
+  margin-top: 10px;
+}
+
+/* Quiz Container */
+.quiz-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Rest of the styles remain unchanged */
+.question {
+  font-size: 2rem; /* Larger question text */
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options li {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.3rem; /* Larger button text */
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 25px; /* More rounded buttons */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1); /* Bounce effect */
+}
+
+/* Cat GIF */
+.cat-gif {
+  margin-top: 30px;
+  opacity: 0; /* Start invisible */
+  animation: fadeInAndWiggle 1s ease-in-out forwards; /* Fade in and wiggle */
+}
+
+.cat-gif img {
+  border-radius: 15px;
+}
+
+/* Animation for GIF */
+@keyframes fadeInAndWiggle {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  50% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1.05); /* Slightly larger */
+  }
+  100% {
+    opacity: 1; /* Stay fully visible */
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.result-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+}
+
+.result-message {
+  font-size: 2.5rem; /* Larger result message */
+  color: #ff4757;
+}
+
+.score {
+  font-size: 1.8rem;
+  color: #ff6b81;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 1.3rem; /* Larger footer text */
+  color: #ff6b81;
+}
+
+
+
+/* Bouncing Hearts */
+.bouncing-heart {
+  font-size: 2.5rem; /* Adjust size to match the title */
+  display: inline-block; /* Required for animations */
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Add slight delay for the second heart */
+.bouncing-heart:nth-of-type(2) {
+  animation-delay: 0.5s; /* Offset the second heart's animation */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly */
+  } 
+} 
